@@ -8,20 +8,18 @@ import {
 SparklesIcon,
 } from '@heroicons/react/outline';
 
+import DribbbleIcon from '../components/Icon/DribbbleIcon';
+import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/home.png';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import heroImage from '../images/amazon_ilustration.jpg';
+import porfolioImage1 from '../images/portfolio/climmob.png';
+import porfolioImage2 from '../images/portfolio/sleepify.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import testimonialImage from '../images/home.png';
+import testimonialImage1 from '../images/leonardo.jpg';
 import profileEpic from '../images/suzane.jpg';
 
 import {
@@ -39,8 +37,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Suzane Castro\s Portifolio',
+  description: "Suzane Castro's Portifolio",
 };
 
 /**
@@ -50,8 +48,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
-  Skills: 'skills',
+  Portfolio: 'projects',
   Stats: 'stats',
   Testimonials: 'testimonials',
 } as const;
@@ -115,7 +112,7 @@ export const aboutData: About = {
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
+    title: 'Clim Mob',
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
     image: porfolioImage1,
@@ -136,25 +133,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
+    image: porfolioImage4,
   },
 ];
 
@@ -165,22 +144,22 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Leonardo Nascimento - Tech Lead @ebayKleinanzeigen',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Cauê de Sousa - ',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Ph.D Kauê de Sousa - Agricultural Scientist @ CGIAR',
+      text: 'Suzane\'s creativity and efficiency in creating the software\'s organizational chart within a tight timeline was impressive. Her ability to identify priority areas for improvement and her prompt response to feedback, resulting in an improved design, was commendable. I am grateful for her hard work and professionalism, and I highly recommend her for the exceptional skills demonstrated during the project.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Max',
+      name: 'Leonardo Nascimento - Tech Lead @ ebayKleinanzeigen',
+      text: 'During the time I worked with her, she has always been deeply committed to our product and users. Starting as a support analyst, she played a crucial role in sharing users feedback with the development team. Her growth within the company has been remarkable, as she has earned the trust of our customers and become the bridge between our tech team and the customer\'s team.',
+      image: testimonialImage1,
+    },
+    {
+      name: 'Max Teacher @ Ironhack',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
     {
-      name: 'Estudante',
+      name: 'Student @ Ironhack',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
@@ -211,7 +190,7 @@ export const contact: ContactSection = {
       href: 'https://www.instagram.com/suzaneecastro/',
     },
     {
-      type: ContactType.Github,
+      type: ContactType.LinkedIn,
       text: 'suzane-c-9410b9149',
       href: 'https://www.linkedin.com/in/suzane-c-9410b9149/',
     },
@@ -223,8 +202,8 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/suzane-c-9410b9149/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/suzaneecastro/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Dribbble', Icon: DribbbleIcon, href: 'https://www.instagram.com/suzaneecastro/'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/suzane.castro.946'},
 ];
