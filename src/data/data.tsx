@@ -5,7 +5,7 @@ import {
   FlagIcon,
   MapIcon,
   OfficeBuildingIcon,
-SparklesIcon,
+  SparklesIcon,
 } from '@heroicons/react/outline';
 
 import DribbbleIcon from '../components/Icon/DribbbleIcon';
@@ -14,14 +14,12 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/amazon_ilustration.jpg';
+import testimonialImage from '../images/home.png';
 import porfolioImage1 from '../images/portfolio/climmob.png';
-import porfolioImage2 from '../images/portfolio/sleepify.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import testimonialImage from '../images/home.png';
-import testimonialImage1 from '../images/leonardo.jpg';
+import porfolioImage2 from '../images/portfolio/sleepify.png';
 import profileEpic from '../images/suzane.jpg';
-
 import {
   About,
   ContactSection,
@@ -37,7 +35,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Suzane Castro\s Portifolio',
+  title: 'Suzane Castro\'s Portifolio',
   description: "Suzane Castro's Portifolio",
 };
 
@@ -146,12 +144,12 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Ph.D Kauê de Sousa - Agricultural Scientist @ CGIAR',
       text: 'Suzane\'s creativity and efficiency in creating the software\'s organizational chart within a tight timeline was impressive. Her ability to identify priority areas for improvement and her prompt response to feedback, resulting in an improved design, was commendable. I am grateful for her hard work and professionalism, and I highly recommend her for the exceptional skills demonstrated during the project.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      image:  'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
     {
       name: 'Leonardo Nascimento - Tech Lead @ ebayKleinanzeigen',
       text: 'During the time I worked with her, she has always been deeply committed to our product and users. Starting as a support analyst, she played a crucial role in sharing users feedback with the development team. Her growth within the company has been remarkable, as she has earned the trust of our customers and become the bridge between our tech team and the customer\'s team.',
-      image: testimonialImage1,
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
     {
       name: 'Max Teacher @ Ironhack',
@@ -161,7 +159,7 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Student @ Ironhack',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      image:  'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
 };

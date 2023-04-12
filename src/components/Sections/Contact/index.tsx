@@ -4,12 +4,12 @@ import {FC, memo} from 'react';
 
 import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
+import DribbbleIcon from '../../Icon/DribbbleIcon';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import InstagramIcon from '../../Icon/InstagramIcon';
 import LinkedInIcon from '../../Icon/LinkedInIcon';
 import Section from '../../Layout/Section';
 import ContactForm from './ContactForm';
-import DribbbleIcon from '../../Icon/DribbbleIcon';
 
 const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Email]: {Icon: MailIcon, srLabel: 'Email'},
